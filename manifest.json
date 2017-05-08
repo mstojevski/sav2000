@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "sav2000",
+  "description": "This extension will hide AV",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_title": "SAV2000",
+    "default_icon": "icon.png"
+    
+  },
+
+  "content_scripts": [{
+    "matches": ["http://www.blic.rs/","http://mondo.rs/","http://www.kurir.rs/","http://informer.rs/"],
+    "js": ["main.js"]
+  }]
+}
